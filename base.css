@@ -4,6 +4,7 @@
     --header-height: 70px;
     --header-main-search: 48px;
     --grid-width: 1100px;
+    --width-modal: 980px
 }
 
 @import url(https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap);
@@ -21,6 +22,18 @@
     justify-content: space-between;
 }
 
+.wrapper {
+    /* "wrapper" only display flex, use for short code */
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-text {
     font-size: 16px;
     font-weight: 500;
@@ -35,6 +48,19 @@
     font-weight: 900;
 }
 
+.lower-text {
+    color: var(--black-color);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 16px !important;
+}
+
+.value-money {
+    color: #f9495f;
+    font-size: 20px !important;
+    font-weight: 900;
+}
+
 .bridge {
     /* Bridge used for hover an elment that you want 
                     to get "bridge" between this to that  */
@@ -44,4 +70,23 @@
     height: 10px;
     position: absolute;
     top: calc(100% - 2px);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #99a0ad;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f3fc;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
 }
